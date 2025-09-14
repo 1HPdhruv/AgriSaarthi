@@ -1,0 +1,21 @@
+with tab3:
+    st.header("📜 Farmer History")
+    if farmer_name:
+        crop_hist = get_crop_history(farmer_name)
+        disease_hist = get_disease_history(farmer_name)
+
+        st.subheader("🌾 Crop Recommendations")
+        st.table(crop_hist)
+
+        st.subheader("📸 Disease Detections (Bilingual)")
+        for d in disease_hist:
+            st.markdown(f"""
+            **Crop:** {d[2]}  
+            **Disease:** {d[3]}  
+            🩺 Remedy (EN): {d[4]}  
+            ⚠️ Precautions (EN): {d[5]}  
+            🩺 Remedy (HI): {d[6]}  
+            ⚠️ Precautions (HI): {d[7]}  
+            ⏱️ {d[8]}
+            """)
+            st.markdown("---")

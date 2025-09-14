@@ -1,0 +1,70 @@
+crop,ph_min,ph_max,water_need,base_yield,base_price,carbon_footprint,crop_hi,crop_ta,crop_te,crop_ml,climate_zone,season
+Wheat,6.0,7.5,Medium,3000,20,Medium,गेहूं,கோதுமை,గోధుమ,ഗേതുമ,Temperate,Winter
+Rice,5.0,6.5,High,4000,18,High,चावल,அரிசி,బియ్యం,അരി,Tropical,Rainy / Monsoon
+Maize,5.5,7.0,Medium,3500,15,Medium,मक्का,சோளம்,మక్కజొన్న,മക്ക,Tropical,Rainy / Monsoon
+Chickpea,6.0,8.0,Low,1800,50,Low,चना,கொண்டை,చిక్పి,ചണ,Temperate,Winter
+Cotton,6.0,7.5,Medium,2500,60,Very High,कपास,பருத்தி,పత్తి,പത്തു,Tropical,Rainy / Monsoon
+Sugarcane,6.0,7.5,High,8000,3,High,गन्ना,ஊர்க்கசகற்கண்டி,ఎర్రచెరుకు,ശർക്കരക്കണ്ടി,Tropical,Rainy / Monsoon
+Soybean,6.0,7.5,Medium,2800,45,Medium,सोयाबीन,சோயா பயிர்,సోయాబీన్,സോയ,Tropical,Rainy / Monsoon
+Potato,5.0,6.5,High,20000,10,High,आलू,உருளைக்கிழங்கு,అలుపుఉరగ,ഉരുളക്കിഴങ്ങ്,Temperate,Winter
+Tomato,5.5,6.5,High,60000,12,High,टमाटर,தக்காளி,టమోటా,തക്കാളി,Tropical,Summer
+Onion,5.5,6.5,Medium,30000,8,Medium,प्याज़,வெங்காயம்,ఈలుకాయ,സവാള,Temperate,Winter
+Carrot,5.5,6.5,Medium,25000,9,Medium,गाजर,கேரட்,క్యారెట్,കാററ്റ്,Temperate,Winter
+Lettuce,6.0,7.0,High,20000,7,High,सलाद पत्ता,லெட்டூஸ்,లెట్ట్యూస్,ലെറ്റ്യൂസ്,Temperate,Winter
+Spinach,6.0,7.0,High,15000,6,High,पालक,கீரை,పాలక్,പാലക്,Temperate,Winter
+Cabbage,6.0,7.5,Medium,22000,5,Medium,पत्ता गोभी,முட்டைகோஸ்,కేబేజ్,മുട്ടൈകോബി,Temperate,Winter
+Broccoli,6.0,7.0,Medium,18000,4,Medium,ब्रोकोली,ப்ரோகோலி,బ్రోక్లీ,ബ്രോകോളി,Temperate,Winter
+Cauliflower,6.0,7.5,Medium,20000,4,Medium,फूलगोभी,பூ கோஸ்,గోబీ,ഫുല്കോബി,Temperate,Winter
+Peas,6.0,7.5,Medium,4000,30,Low,मटर,பச்சை பட்டாணி,పప్పు,പയർ,Temperate,Winter
+Lentils,6.0,8.0,Low,2000,55,Low,मसूर,பருப்பு,పప్పు,മസൂര്,Temperate,Winter
+Barley,6.0,7.5,Medium,3200,19,Medium,जौ,சேளம்,బార్లే,ബാർലി,Temperate,Winter
+Sorghum,5.5,7.0,Low,2500,22,Low,ज्वार,சோர்கம்,సోర్గం,സോർഗം,Tropical,Rainy / Monsoon
+Millet,5.5,7.0,Low,2000,25,Low,बाजरा,சாமை,జొన్న,സാമൈ,Tropical,Rainy / Monsoon
+Sunflower,6.0,7.5,Medium,3000,40,Medium,सूरजमुखी,சூரியகாந்தி,సూర్యకాంతి,സൂര്യകാന്തി,Tropical,Rainy / Monsoon
+Rapeseed,6.0,7.5,Medium,2800,35,Medium,सरसों,காஞ்சி விதை,రాప్సీడ్,റാപ്‌സീഡ്,Temperate,Winter
+Alfalfa,6.5,7.5,High,10000,15,High,अल्फाल्फा,ஆல்ஃபால்ஃபா,అల్ఫాల్ఫా,ആൽഫാല്ഫ,Temperate,Winter
+Cucumber,5.5,6.5,High,50000,11,High,खीरा,வெள்ளரிக்காய்,పప్పికాయ,വെള്ളരിക്കായ്,Tropical,Summer
+Pumpkin,6.0,7.5,Medium,15000,8,Medium,कद्दू,பம்ப்கின்,పంప్కిన్,പമ്പ്കിൻ,Tropical,Summer
+Watermelon,6.0,7.5,High,40000,9,High,तरबूज,தர்பூசணி,కరుగుద్రాక్ష,തിരുഭൂസണി,Tropical,Summer
+Muskmelon,5.5,6.5,High,12000,15,Medium,खरबूजा,பன்னீர் தர்பூசணி,మస్క్మెలోన్,മസ്ക് മെലോൺ,Tropical,Summer
+Strawberry,5.5,6.5,High,25000,20,High,स्ट्रॉबेरी,ஸ்ட்ராபெரி,స్ట్రాబెర్రీ,സ്ട്രോബെറി,Temperate,Winter
+Blueberry,4.5,5.5,High,15000,25,High,ब्लूबेरी,ப்ளூபெரி,బ్లూబెర్రీ,ബ്ലുബെറി,Temperate,Winter
+Raspberry,5.0,6.0,High,12000,22,High,रसभरी,ராஸ்பெரி,రాస్ప్బెర్రీ,റാസ്ബെറി,Temperate,Winter
+Blackberry,5.0,6.0,High,10000,18,High,ब्लैकबेरी,பிளாக்பெரி,బ్లాక్‌బెర్రీ,ബ്ലാക്‌ബെറി,Temperate,Winter
+Apple,6.0,7.0,Medium,20000,30,Medium,सेब,ஆப்பிள்,సేపు,ആപ്പിൾ,Temperate,Winter
+Banana,5.0,6.5,High,30000,15,High,केला,வாழைப்பழம்,అరటి,വാഴപ്പഴം,Tropical,Rainy / Monsoon
+Orange,5.5,6.5,Medium,25000,20,Medium,संतरा,செரம,సంత్రా,ഓറഞ്ച്,Tropical,Rainy / Monsoon
+Grapes,5.5,6.5,Medium,18000,28,Medium,अंगूर,திராட்சை,ద్రాక్ష,ദ്രാക്ഷ,Tropical,Winter
+Mango,5.5,6.5,Medium,22000,25,Medium,आम,மாம்பழம்,మామిడి,മാങ്ങ,Tropical,Rainy / Monsoon
+Pineapple,4.5,5.5,High,15000,12,High,अनानास,அன்னாசிப்பழம்,అన్నాస,അന്നാസ,Tropical,Rainy / Monsoon
+Coconut,5.0,8.0,High,10000,10,High,नारियल,தேங்காய்,కొబ్బరి,തേങ്ങ,Tropical,Rainy / Monsoon
+Tea,4.5,5.5,High,2000,100,High,चाय,தேயிலை,చాయ్,ചായ,Tropical,Rainy / Monsoon
+Coffee,6.0,6.5,High,1500,120,High,कॉफी,காபி,కాఫీ,കാപ്പി,Tropical,Rainy / Monsoon
+Sugarbeet,6.0,7.5,High,40000,4,High,चुकंदर,சுக்கந்தர்,సుగర్ బీట్,ഷുഗര് ബീറ്റ്,Temperate,Winter
+Tobacco,5.5,6.5,Medium,2500,50,Very High,तंबाकू,புகையிலை,తమాకూ,പുകവലി,Tropical,Rainy / Monsoon
+Almond,6.0,7.0,Low,2000,150,Low,बादाम,பாதாம்,బాదం,ബദാം,Temperate,Winter
+Walnut,6.0,7.0,Low,1800,130,Low,अखरोट,வால்நட்,వాల్‌నట్,വാൾനട്ട്,Temperate,Winter
+Pistachio,6.0,7.5,Low,1500,140,Low,पिस्ता,பிஸ்தா,పిస్తా,പിസ്റ്റ,Temperate,Winter
+Hazelnut,6.0,7.5,Low,1600,120,Low,हाज़लनट,ஹேஸ்ல்நட்,హెజ్‌ల్‌నట్,ഹേസിൽനട്ട്,Temperate,Winter
+Chestnut,5.5,6.5,Medium,2000,110,Medium,शाहबलूत,செஸ்ட்நட்,చెస్ట్నట్,ചെസ്റ്റ്‌നട്ട്,Temperate,Winter
+Olive,6.0,8.0,Low,3000,80,Low,जैतून,ஒலிவ்,ఓలివ్,ഓലിവ്,Temperate,Winter
+Avocado,6.0,6.5,High,4000,90,High,एवोकाडो,அவோகாடோ,అవోకాడో,അവോകാഡോ,Tropical,Rainy / Monsoon
+Peach,6.0,7.0,Medium,5000,70,Medium,आड़ू,பீச்,పీచ్,പീച്ച്,Temperate,Winter
+Pear,6.0,7.5,Medium,4000,60,Medium,नाशपाती,பியார்,పియర్,പിയർ,Temperate,Winter
+Plum,5.5,6.5,Medium,3500,55,Medium,आलूबुखारा,பிளம்,ప్లమ్,പ്ലം,Temperate,Winter
+Cherry,6.0,7.0,Medium,3000,75,Medium,चेरी,செர்ரி,చెర్రీ,ചെറി,Temperate,Winter
+Apricot,6.0,7.5,Medium,2500,65,Medium,खुबानी,அப்ரிகாட்,అప్రికాట్,ആപ്രിക്കോട്ട്,Temperate,Winter
+Fig,6.0,8.0,Low,2000,85,Low,अंजीर,அத்தி பழம்,అప్పుళ్లు,അത്തിപഴം,Temperate,Winter
+Pomegranate,5.5,7.0,Low,2200,95,Low,अनार,மாதுளை,దానిమ్మ,മത്തളി,Temperate,Winter
+Cranberry,4.0,5.5,High,10000,40,High,क्रैनबेरी,கிரேன் பெர்ரி,క్రాన్బెర్రీ,ക്രാൻബെറി,Temperate,Winter
+Rye,5.5,7.0,Medium,2800,17,Medium,राई,ராய்,రై,റൈ,Temperate,Winter
+Oats,6.0,7.5,Medium,3000,16,Medium,जई,ஓட்ஸ்,ఓట్స్,ഓട്സ്,Temperate,Winter
+Quinoa,6.0,8.0,Low,1500,70,Low,क्विनोआ,கினோவா,క్వినోవా,ക്വിനോവ,Temperate,Winter
+Buckwheat,5.5,7.0,Low,2000,60,Low,कुट्टू,பக்க்வீட்,బక్‌వీటు,ബക്ക്വീറ്റ്,Temperate,Winter
+Chia,6.0,7.5,Low,1200,90,Low,चिया,சியா,చియా,ചിയ,Temperate,Winter
+Flax,6.0,7.5,Medium,2500,30,Medium,अलसी,பழுப்பு வேர்க்கடலை,ఫ్లాక్స్,ഫ്ലാക്സ്,Temperate,Winter
+Hemp,6.0,7.5,Medium,2000,25,Medium,भांग,ஹேம்ப்,హెంప్,ഹെംപ്,Temperate,Winter
+Saffron,6.0,8.0,Low,500,200,Very High,केसर,சைப்ரன்,సాఫ్రాన్,സാഫ്രാൻ,Temperate,Winter
+Vanilla,5.0,6.0,High,300,250,High,वनीला,வனிலா,వానిల్లా,വനില, Tropical,Rainy / Monsoon
+Cocoa,5.0,6.5,High,1000,150,High,कोको,கோகோ,కోకో,കോക്കോ,Tropical,Rainy / Monsoon
+Rubber,4.5,6.0,High,800,180,Very High,रबर,ரப்பர்,రబ్బర్,റബ്ബർ,Tropical,Rainy / Monsoon
