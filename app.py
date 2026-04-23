@@ -3,7 +3,7 @@ import os
 import tempfile
 import datetime
 import pandas as pd
-from disease_detector import predict_disease   # ← fixed: file is in root, not ml/
+from ml.disease_detector import predict_disease
 
 # -------------------------
 # 📌 Load Data
