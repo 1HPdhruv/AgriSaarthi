@@ -11,6 +11,7 @@ import os
 import hashlib
 import numpy as np
 from PIL import Image
+from ml.disease_detector import predict_disease
 
 # ---------------------------------------------------------------------------
 # Multilingual disease knowledge base
