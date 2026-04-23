@@ -1,7 +1,10 @@
 import os
 import json
 import numpy as np
-from tensorflow.keras.models import load_model
+import tensorflow as tf
+
+interpreter = tf.lite.Interpreter(model_path="model.tflite")
+interpreter.allocate_tensors()
 from tensorflow.keras.preprocessing import image
 
 # -------------------------------
