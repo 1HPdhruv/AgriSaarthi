@@ -3,14 +3,18 @@ import os
 import tempfile
 import datetime
 import pandas as pd
-from ml.disease_detector import predict_disease
+from pathlib import Path
+from disease_detector import predict_disease          # ✅ FIX 1: was "from ml.disease_detector"
+
+# ✅ FIX 2: resolve paths relative to this file, not working directory
+BASE_DIR        = Path(__file__).parent
+CROP_DATA_PATH  = BASE_DIR / "crop_profiles.csv"
+PRICE_DATA_PATH = BASE_DIR / "market_prices.csv"
+HISTORY_PATH    = BASE_DIR / "disease_history.csv"
 
 # -------------------------
 # 📌 Load Data
 # -------------------------
-CROP_DATA_PATH  = "crop_profiles.csv"
-PRICE_DATA_PATH = "market_prices.csv"
-
 @st.cache_data
 def load_crop_data():
     crops  = pd.read_csv(CROP_DATA_PATH)
@@ -31,8 +35,6 @@ crops, prices = load_crop_data()
 # -------------------------
 # Disease history saver
 # -------------------------
-HISTORY_PATH = "disease_history.csv"
-
 def save_disease_history(
     farmer, crop, disease,
     remedy_en, precautions_en,
@@ -144,7 +146,7 @@ lang_dict = {
 
 water_map = {
     "കുറഞ്ഞത്": "Low",   "മധ്യമം": "Medium",   "അധികം": "High",    "വളരെ അധികം": "Very High",
-    "కుrecedతక్కువ": "Low","మధ్యస్థ": "Medium",  "ఎక్కువ": "High",   "చాలా ఎక్కువ": "Very High",
+    "తక్కువ": "Low",     "మధ్యస్థ": "Medium",  "ఎక్కువ": "High",   "చాలా ఎక్కువ": "Very High",
     "குறைந்த": "Low",    "மதியம்": "Medium",   "அதிக": "High",    "மிக அதிக": "Very High",
     "कम": "Low",         "मध्यम": "Medium",    "अधिक": "High",    "बहुत अधिक": "Very High",
     "Low": "Low",        "Medium": "Medium",   "High": "High",    "Very High": "Very High",
@@ -250,7 +252,7 @@ with tab2:
         st.stop()
 
     lang = st.radio(
-        "Choose language / भाषा / மொழி / భాష / ഭாഷ:",
+        "Choose language / भाषा / மொழி /భాష / ഭാഷ:",
         ["en", "hi", "ta", "te", "ml"],
         format_func=lambda x: {"en": "English", "hi": "हिंदी", "ta": "தமிழ்", "te": "తెలుగు", "ml": "മലയാളം"}[x],
     )
@@ -258,7 +260,7 @@ with tab2:
     uploaded_file = st.file_uploader("Upload a leaf image", type=["jpg", "jpeg", "png"])
 
     if uploaded_file is not None:
-        # ← fixed: use tempfile instead of hardcoded path (works on cloud)
+        # ✅ FIX 3: tempfile instead of hardcoded path
         with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
             tmp.write(uploaded_file.getbuffer())
             tmp_path = tmp.name
@@ -266,9 +268,8 @@ with tab2:
         st.image(tmp_path, caption="Uploaded Leaf", use_container_width=True)
 
         with st.spinner("🔍 Analysing leaf image..."):
-            result = predict_disease(tmp_path, lang=lang)  # ← no duplicate import needed
+            result = predict_disease(tmp_path, lang=lang)
 
-        # Clean up temp file
         try:
             os.unlink(tmp_path)
         except Exception:
