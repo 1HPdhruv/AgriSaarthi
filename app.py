@@ -4,7 +4,7 @@ import tempfile
 import datetime
 import pandas as pd
 from pathlib import Path
-from disease_detector import predict_disease          # ✅ FIX 1: was "from ml.disease_detector"
+from ml.disease_detector import predict_disease          # ✅ FIX 1: was "from ml.disease_detector"
 
 # ✅ FIX 2: resolve paths relative to this file, not working directory
 BASE_DIR        = Path(__file__).parent
