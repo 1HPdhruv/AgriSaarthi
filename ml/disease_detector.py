@@ -1,7 +1,10 @@
 import os
 import json
 import numpy as np
-import tensorflow as tf
+try:
+    import tensorflow as tf
+except ImportError:
+    import tflite_runtime.interpreter as tflite
 
 interpreter = tf.lite.Interpreter(model_path="model.tflite")
 interpreter.allocate_tensors()
