@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriSaarthi - AI Assistant</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <h1>🌱 AgriSaarthi</h1>
+        <p>AI Crop & Disease Assistant</p>
+      </header>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="crop-tab">🌾 Crop Recommendation</button>
+        <button class="tab-btn" data-tab="disease-tab">📸 Disease Detection</button>
+        <button class="tab-btn" data-tab="history-tab">📜 Farmer History</button>
+      </div>
+
+      <div class="tab-content">
+        <!-- Crop Recommendation -->
+        <section id="crop-tab" class="tab-pane active">
+          <div class="glass-card">
+            <h2>🌾 Crop Recommendation System</h2>
+            <form id="crop-form">
+              <div class="form-group">
+                <label>State / Region</label>
+                <select id="state-select" required>
+                  <option value="Kerala">Kerala (Tropical)</option>
+                  <option value="Punjab">Punjab (Temperate)</option>
+                  <option value="Rajasthan">Rajasthan (Dry)</option>
+                  <!-- Add more as needed -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Language</label>
+                <select id="lang-select">
+                  <option value="en">English</option>
+                  <option value="hi">Hindi</option>
+                  <option value="ta">Tamil</option>
+                  <option value="te">Telugu</option>
+                  <option value="ml">Malayalam</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Soil pH <span id="ph-val">6.5</span></label>
+                <input type="range" id="soil-ph" min="4.5" max="9.0" step="0.1" value="6.5">
+              </div>
+              <div class="form-group">
+                <label>Water Availability</label>
+                <select id="water-select">
+                  <option value="Low">Low</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
+                  <option value="Very High">Very High</option>
+                </select>
+              </div>
+              <button type="submit" class="btn primary">Recommend Crop</button>
+            </form>
+            <div id="crop-results" class="results-container hidden"></div>
+          </div>
+        </section>
+
+        <!-- Disease Detection -->
+        <section id="disease-tab" class="tab-pane">
+          <div class="glass-card">
+            <h2>📸 Plant Disease Detection</h2>
+            <form id="disease-form">
+              <div class="form-group">
+                <label>Farmer Name</label>
+                <input type="text" id="farmer-name" required placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label>Language</label>
+                <select id="disease-lang">
+                  <option value="en">English</option>
+                  <option value="hi">Hindi</option>
+                  <option value="ta">Tamil</option>
+                  <option value="te">Telugu</option>
+                  <option value="ml">Malayalam</option>
+                </select>
+              </div>
+              <div class="form-group upload-area">
+                <label for="leaf-img" class="upload-label">
+                  <span class="upload-icon">📁</span>
+                  <span>Upload Leaf Image (JPG/PNG)</span>
+                </label>
+                <input type="file" id="leaf-img" accept="image/jpeg, image/png" required hidden>
+                <img id="image-preview" class="hidden">
+              </div>
+              <button type="submit" class="btn primary">Analyze Image</button>
+            </form>
+            <div id="disease-results" class="results-container hidden"></div>
+          </div>
+        </section>
+
+        <!-- History -->
+        <section id="history-tab" class="tab-pane">
+          <div class="glass-card table-wrapper">
+            <h2>📜 Farmer Disease History</h2>
+            <button id="refresh-history" class="btn secondary">Refresh History</button>
+            <div class="table-container mt-2">
+              <table id="history-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Farmer</th>
+                    <th>Crop</th>
+                    <th>Disease</th>
+                    <th>Remedy</th>
+                  </tr>
+                </thead>
+                <tbody id="history-tbody">
+                  <tr><td colspan="5" style="text-align:center;">Loading...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
